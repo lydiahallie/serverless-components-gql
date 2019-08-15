@@ -1,0 +1,5 @@
+type Post {
+  id: ID! @id
+  title: String!
+  body: String!
+}
