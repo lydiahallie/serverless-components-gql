@@ -1,5 +1,14 @@
 name: fullstack-graphql
 
+client:
+  component: "@serverless/website"
+  inputs:
+    code:
+      src: dist
+      root: client
+    env:
+      API_ENDPOINT: ${api.url}
+
 graphql:
   component: "@serverless/function"
   inputs:
